@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Surprise For You 💕</title>
+  <meta name="description" content="A Valentine's Day surprise just for you">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+</head>
+
+<body>
+
+  <!-- Floating Hearts Background -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- Doodle Stars -->
+  <div class="doodle-star" style="top:10%;left:5%;">✦</div>
+  <div class="doodle-star" style="top:25%;right:8%;animation-delay:1s;">✧</div>
+  <div class="doodle-star" style="top:60%;left:3%;animation-delay:0.5s;">✦</div>
+  <div class="doodle-star" style="top:80%;right:5%;animation-delay:1.5s;">✧</div>
+  <div class="doodle-star" style="top:45%;right:3%;animation-delay:2s;">✦</div>
+
+  <!-- ========== PAGE 1: PASSWORD ========== -->
+  <div id="password-page" class="page active">
+
+    <!-- Circular Photo -->
+    <div class="photo-circle">
+      <img src="images/1.jpg" alt="My Love">
+    </div>
+
+    <!-- Password Input Area -->
+    <div class="password-container">
+      <h1>Enter Our<br>Secret Code 💕</h1>
+      <p class="password-hint">✏️ The first day we became a couple...</p>
+
+      <!-- Code Display (DD/MM/YYYY: 05/02/2026) -->
+      <div class="code-display" id="codeDisplay">
+        <div class="code-dot" id="d0"></div>
+        <div class="code-dot" id="d1"></div>
+        <span class="code-slash">/</span>
+        <div class="code-dot" id="d2"></div>
+        <div class="code-dot" id="d3"></div>
+        <span class="code-slash">/</span>
+        <div class="code-dot" id="d4"></div>
+        <div class="code-dot" id="d5"></div>
+        <div class="code-dot" id="d6"></div>
+        <div class="code-dot" id="d7"></div>
+      </div>
+
+      <!-- Numpad -->
+      <div class="numpad" id="numpad">
+        <button class="numpad-btn" data-val="1">1</button>
+        <button class="numpad-btn" data-val="2">2</button>
+        <button class="numpad-btn" data-val="3">3</button>
+        <button class="numpad-btn" data-val="4">4</button>
+        <button class="numpad-btn" data-val="5">5</button>
+        <button class="numpad-btn" data-val="6">6</button>
+        <button class="numpad-btn" data-val="7">7</button>
+        <button class="numpad-btn" data-val="8">8</button>
+        <button class="numpad-btn" data-val="9">9</button>
+        <button class="numpad-btn special" data-val="back">⌫</button>
+        <button class="numpad-btn" data-val="0">0</button>
+        <button class="numpad-btn enter-btn" data-val="enter">♥</button>
+      </div>
+
+      <!-- Error Message -->
+      <p class="error-msg" id="errorMsg"></p>
+    </div>
+  </div>
+
+  <!-- ========== PAGE 2: SURPRISE ========== -->
+  <div id="surprise-page" class="page">
+
+    <!-- Floating Animated Image -->
+    <div class="floating-sticker">
+      <img src="mylove/Gemini_Generated_Image_towk53towk53towk.png" alt="Love Decoration">
+    </div>
+
+    <h1 class="surprise-title">Happy Valentine's Day! 💝</h1>
+    <p class="surprise-subtitle">For the girl who stole my heart ✨</p>
+
+    <!-- Love Letter -->
+    <div class="love-letter">
+      <p>My Dearest Valentine,</p>
+      <p>
+        Happy Valentine's Day, my love! 💕
+        Today is a day to celebrate love, and there's no one
+        I'd rather celebrate it with than you.
+      </p>
+      <p>
+        I still remember February 5th, 2026 — the day you
+        said yes to being my girlfriend. That was the happiest
+        day of my life, and every day since then has been even
+        more beautiful because of you. 🌹
+      </p>
+      <p>
+        Thank you for choosing me. Thank you for being
+        my girlfriend, my best friend, and my everything.
+        Thank you for every smile, every laugh,
+        and every moment we share together. 💖
+      </p>
+      <p>
+        I'm so grateful to have you in my life.
+        You make every ordinary day feel extraordinary,
+        and I promise to keep making you happy —
+        today, tomorrow, and for as long as you'll have me. 🥰
+      </p>
+      <p>
+        I love you more than words could ever say.
+        Happy Valentine's Day, baby! 💝
+      </p>
+      <p class="signature">With all my love, forever yours ♥</p>
+    </div>
+
+    <!-- Photo Carousel -->
+    <div class="carousel" id="carousel">
+      <button class="carousel-arrow carousel-prev" id="carouselPrev">&#10094;</button>
+      <div class="carousel-track-container">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="images/1.jpg" alt="Us">
+            <p class="carousel-caption">My favorite smile in the whole world 💕</p>
+          </div>
+          <div class="carousel-slide"><img src="images/2.jpg" alt="Us">
+            <p class="carousel-caption">You make every moment magical ✨</p>
+          </div>
+          <div class="carousel-slide"><img src="images/3.jpg" alt="Us">
+            <p class="carousel-caption">My heart belongs to you 💖</p>
+          </div>
+          <div class="carousel-slide"><img src="images/IMG_20260126_171750.jpg" alt="Us">
+            <p class="carousel-caption">Beautiful memories with you 🌸</p>
+          </div>
+          <div class="carousel-slide"><img src="images/IMG_20260213_070714.jpg" alt="Us">
+            <p class="carousel-caption">Every day with you is a gift 🎁</p>
+          </div>
+          <div class="carousel-slide"><img src="images/IMG_20260213_070720.jpg" alt="Us">
+            <p class="carousel-caption">I love the way you look at me 🥰</p>
+          </div>
+          <div class="carousel-slide"><img src="images/IMG_20260213_101617.jpg" alt="Us">
+            <p class="carousel-caption">You're the reason I smile every day 😊</p>
+          </div>
+          <div class="carousel-slide"><img src="images/Messenger_creation_89600952-6F36-4E79-9153-B0E35BEE6EF7.jpeg"
+              alt="Us">
+            <p class="carousel-caption">My cutie little angel 👼</p>
+          </div>
+          <div class="carousel-slide"><img src="images/Messenger_creation_CEA73B1D-AD2F-4F87-8284-FF76597BDE71.jpeg"
+              alt="Us">
+            <p class="carousel-caption">Forever and always, my love 💗</p>
+          </div>
+          <div class="carousel-slide"><img src="images/Messenger_creation_D43DE8AF-7D99-401B-B713-2C6F0B8240F6.jpeg"
+              alt="Us">
+            <p class="carousel-caption">The love of my life 💝</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-arrow carousel-next" id="carouselNext">&#10095;</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+
+  </div>
+
+  <!-- Heart Burst Container -->
+  <div class="heart-burst" id="heartBurst"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
